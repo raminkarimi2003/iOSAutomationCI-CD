@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-30T09:31:46 EDT" name="Suite" finished-at="2026-04-30T09:33:40 EDT" duration-ms="114524">
+    <groups>
+    </groups>
+    <test started-at="2026-04-30T09:31:46 EDT" name="Test" finished-at="2026-04-30T09:33:40 EDT" duration-ms="114524">
+      <class name="Appium.TestCases.alertView">
+        <test-method is-config="true" signature="config()[pri:0, instance:Appium.TestCases.alertView@5e600dd5]" started-at="2026-04-30T09:33:19 EDT" name="config" finished-at="2026-04-30T09:33:30 EDT" duration-ms="11861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method signature="AlertView()[pri:0, instance:Appium.TestCases.alertView@5e600dd5]" started-at="2026-04-30T09:33:30 EDT" name="AlertView" finished-at="2026-04-30T09:33:37 EDT" duration-ms="6919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium.TestCases.alertView@5e600dd5]" started-at="2026-04-30T09:33:37 EDT" name="tearDown" finished-at="2026-04-30T09:33:40 EDT" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Appium.TestCases.alertView -->
+      <class name="Appium.TestCases.webView">
+        <test-method is-config="true" signature="config()[pri:0, instance:Appium.TestCases.webView@534a5a98]" started-at="2026-04-30T09:31:46 EDT" name="config" finished-at="2026-04-30T09:33:09 EDT" duration-ms="82647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method signature="WebView()[pri:0, instance:Appium.TestCases.webView@534a5a98]" started-at="2026-04-30T09:33:09 EDT" name="WebView" finished-at="2026-04-30T09:33:15 EDT" duration-ms="6834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appium.TestCases.webView@534a5a98]" started-at="2026-04-30T09:33:15 EDT" name="tearDown" finished-at="2026-04-30T09:33:19 EDT" duration-ms="3105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Appium.TestCases.webView -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

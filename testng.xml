@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--this is a comment-->
+<suite name="Suite" parallel="false">
+<listeners>
+<listener class-name="resources.listeners"/>
+</listeners>
+  <test  name="Test">
+    <classes>
+      <class name="Appium.TestCases.webView"/>
+      <class name="Appium.TestCases.alertView"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

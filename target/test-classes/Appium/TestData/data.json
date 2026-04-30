@@ -1,0 +1,5 @@
+{
+	"input":"testData",
+	"filePropertyPath":"src/test/java/Appium/TestData/data.properties",
+	"appiumJS":"//usr//local//lib//node_modules//appium//build//lib//main.js"
+}
