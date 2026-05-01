@@ -58,20 +58,31 @@ public class BaseiOS_RealDevice_With_BundleID {
 		
 	}
 	
-	public String getScreenShotPath(String testcaseName,AppiumDriver driver) throws IOException
-	{
-		File source=driver.getScreenshotAs(OutputType.FILE);   // get the screenshot in a file 
-		
-		String destinationFile=System.getProperty("user.dir")+"//Report//"+testcaseName+".png";   //format output
-		File dir = new File(System.getProperty("user.dir") + "/Report/"); // create object for dir and point to this path
-		if (!dir.exists()) {
-		    dir.mkdirs();
-		}
-		FileUtils.copyFile(source,new File(destinationFile)); // create new file object for destinationFile
-		                                                     //and copy the source to it
-		return destinationFile;
+	public String getScreenShotPath(String testcaseName, AppiumDriver driver) throws IOException {
+
+	    File source = driver.getScreenshotAs(OutputType.FILE);
+
+	    String basePath;
+
+	    // Detect if running in Jenkins
+	    if (System.getenv("JENKINS_HOME") != null) {
+	        basePath = System.getProperty("user.dir") + "/test-output/screenshots/";
+	    } else {
+	        basePath = System.getProperty("user.dir") + "/Report/";
+	    }
+
+	    // Create directory if not exists
+	    File dir = new File(basePath);
+	    if (!dir.exists()) {
+	        dir.mkdirs();
+	    }
+
+	    String destinationFile = basePath + testcaseName + ".png";
+
+	    FileUtils.copyFile(source, new File(destinationFile));
+
+	    return destinationFile;
 	}
-	
 	@AfterClass
 	public void tearDown() throws InterruptedException
 	{
