@@ -66,7 +66,7 @@ public class BaseiOS_RealDevice_With_BundleID {
 
 	    // Detect if running in Jenkins
 	    if (System.getenv("JENKINS_HOME") != null) {
-	        basePath = System.getProperty("user.dir") + "/test-output/screenshots/";
+	        basePath = System.getProperty("user.dir") + "/test-output/screenshotsOnFailure/";
 	    } else {
 	        basePath = System.getProperty("user.dir") + "/Report/";
 	    }
