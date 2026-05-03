@@ -24,6 +24,6 @@ public class webView extends BaseiOS_RealDevice_With_BundleID{
     	scroll.scrollToElement(locator,driver);
     	webViewPage webView=new webViewPage(driver);
     	webView.selectWebView();
-	    Assert.assertEquals(webView.getElementText(), "This i HTML content inside a WKWebView .");
+	    Assert.assertEquals(webView.getElementText(), "This is HTML content inside a WKWebView .");
 	}
 }
