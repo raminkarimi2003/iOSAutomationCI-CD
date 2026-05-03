@@ -87,7 +87,6 @@ public class BaseiOS_RealDevice_With_BundleID {
 	public void tearDown() throws InterruptedException
 	{
 		driver.quit();
-		Thread.sleep(1000);
 		service.stop();
 		Thread.sleep(1000);
 	}
